@@ -10,11 +10,13 @@ namespace LineComparison
             double LineOne = obj.Compair();
             Console.WriteLine(LineOne);
 
-            Distance obj1 = new Distance(1, 2, 1, 2);
+            Distance obj1 = new Distance(1, 3, 1, 3);
             double LineTwo = obj1.Compair();
             Console.WriteLine(LineTwo);
 
             Distance.Equal(LineOne, LineTwo);
+
+            Distance.CompareTo(LineOne, LineTwo);
 
         }
     }
